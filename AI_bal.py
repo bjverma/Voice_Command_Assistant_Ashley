@@ -90,13 +90,6 @@ while True:
     elif "open google" in query:
         webbrowser.open('google.com')
 
-    # elif "on google" in query:
-    #     speak("say what you want to search on google")
-    #     search_command = takeVoiceCommand()
-    #     #print(search_command)
-    #     chrome_path = r"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
-    #     webbrowser.register("chrome", None, webbrowser.BackgroundBrowser(chrome_path))
-    #     webbrowser.get("chrome").open_new_tab(search_command+".com")
 
     elif "open twitter" in query:
         webbrowser.open('twitter.com')
@@ -111,7 +104,7 @@ while True:
         webbrowser.open('stackoverflow.com')
     
     elif "play music" in query:
-        music_directory = "F:\\music downloaded"
+        music_directory = "write the path from  your system where music files exit"
         song_list = os.listdir(music_directory)
         print(song_list)
         random_num = random.randint(0, len(song_list)-1)
@@ -124,6 +117,8 @@ while True:
     elif "vscode app" in query:
         vscode_path = "C:\\Users\\balra\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code"
         os.startfile(vscode_path)
+        
+       # from the above mentioned way, one can add more apps installed in his/her system.
 
     elif "email to" in query:
         try:
